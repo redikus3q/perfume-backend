@@ -32,7 +32,7 @@ DEBUG = True
 SECURE_SSL_REDIRECT = False
 
 # Google cloud host ip and localhost
-ALLOWED_HOSTS = ['35.233.16.105', '127.0.0.1', 'www.redikus.com', 'django.redikus.com', 'redikus.com']
+ALLOWED_HOSTS = ['35.233.16.105', '127.0.0.1', 'www.redikus.com', 'django.redikus.com', 'redikus.com', 'django-perfume.herokuapp.com']
 
 # Application definition
 
