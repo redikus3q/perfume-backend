@@ -23,12 +23,12 @@ def checkout(request):
             'price_data': {
                 'currency': 'ron',
                 # Price initially in decimal
-                'unit_amount': parfume['parfume']['price'] * 100,
+                'unit_amount': parfume['flavor']['price'] * 100,
                 "tax_behavior": "inclusive",
                 'product_data': {
-                    'name': parfume['parfume']['name'],
-                    'images': [parfume['parfume']['imageLink']],
-                    'description': parfume['parfume']['description'],
+                    'name': parfume['flavor']['name'],
+                    'images': [parfume['flavor']['imageLink']],
+                    'description': parfume['flavor']['description'],
                 },
             },
             'quantity': parfume['quantity'],
