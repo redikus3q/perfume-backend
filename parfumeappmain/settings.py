@@ -75,12 +75,14 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:4200",
     "https://checkout.stripe.com",
     "https://django-perfume-app.ew.r.appspot.com",
+    "https://redikus3q.github.io",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:4200",
     "https://checkout.stripe.com",
     "https://django-perfume-app.ew.r.appspot.com",
+    "https://redikus3q.github.io",
 ]
 
 ROOT_URLCONF = 'parfumeappmain.urls'
