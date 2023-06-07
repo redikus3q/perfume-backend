@@ -14,6 +14,9 @@ from datetime import timedelta
 from pathlib import Path
 from dotenv import load_dotenv, find_dotenv
 import os
+import mimetypes
+
+mimetypes.add_type("text/css", ".css", True)
 
 load_dotenv(find_dotenv())
 
