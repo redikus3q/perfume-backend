@@ -1,1 +1,1 @@
-web: gunicorn perfumeappmain.wsgi
+web: gunicorn parfumeappmain.wsgi
