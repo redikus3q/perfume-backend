@@ -14,9 +14,6 @@ from datetime import timedelta
 from pathlib import Path
 from dotenv import load_dotenv, find_dotenv
 import os
-import mimetypes
-
-mimetypes.add_type("text/css", ".css", True)
 
 load_dotenv(find_dotenv())
 
@@ -30,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-(mi#m+ljs)n3#i^xztw7!bvam+5p-awhj*xs#8q_rusnzx*ho#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 SECURE_SSL_REDIRECT = False
 
