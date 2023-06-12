@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-(mi#m+ljs)n3#i^xztw7!bvam+5p-awhj*xs#8q_rusnzx*ho#'
+SECRET_KEY = os.environ['SECRET_KEY']
 
 # The `DYNO` env var is set on Heroku CI, but it's not a real Heroku app, so we have to
 # also explicitly exclude CI:
@@ -82,6 +82,7 @@ MIDDLEWARE = [
 
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=10),
+    'REFRESH_TOKEN_LIFETIME': timedelta(hours=24),
 }
 
 CORS_ALLOWED_ORIGINS = [
@@ -128,12 +129,6 @@ DATABASES = {
         'USER': os.environ['DB_USER'],
         'PASSWORD': os.environ['DB_PASSWORD'],
         'NAME': 'parfumedb',
-        # 'OPTIONS': {
-        #     'sslmode': 'verify-ca',
-        #     'sslrootcert': '/your/path/to/server-ca.pem',
-        #     "sslcert": "/your/path/to/client-cert.pem",
-        #     "sslkey": "/your/path/to/client-key.pem",
-        # }
     }
 }
 

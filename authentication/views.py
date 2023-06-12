@@ -12,7 +12,6 @@ def getUser(request):
         userToken = request.headers['Authorization']
     except:
         return JsonResponse("", safe=False)
-
     try:
         userTokenObj = AccessToken(userToken)
     except:
