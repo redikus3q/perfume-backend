@@ -8,7 +8,7 @@ import stripe
 
 stripe.api_key = settings.STRIPE_TEST_PRIVATE_KEY
 
-DOMAIN = "http://localhost:4200/"
+DOMAIN = "https://redikus3q.github.io/perfume-frontend/flavors/"
 
 
 @csrf_exempt
