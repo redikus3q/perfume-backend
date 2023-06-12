@@ -8,7 +8,7 @@ import stripe
 
 stripe.api_key = settings.STRIPE_TEST_PRIVATE_KEY
 
-DOMAIN = "https://redikus3q.github.io/perfume-frontend/flavors/"
+DOMAIN = "https://redikus3q.github.io/perfume-frontend/"
 
 
 @csrf_exempt
@@ -38,8 +38,8 @@ def checkout(request):
         checkout_session = stripe.checkout.Session.create(
             line_items=items,
             mode='payment',
-            success_url=os.path.join(DOMAIN, 'parfumes'),
-            cancel_url=os.path.join(DOMAIN, 'parfumes'),
+            success_url=os.path.join(DOMAIN, 'flavors'),
+            cancel_url=os.path.join(DOMAIN, 'flavors'),
             automatic_tax={'enabled': True},
         )
     except Exception as e:
