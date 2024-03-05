@@ -87,7 +87,7 @@ SIMPLE_JWT = {
 }
 
 CORS_ALLOWED_ORIGINS = [
-    "https://redikus3q.github.io",
+    "https://redikus3q.github.io/",
     "http://localhost:4200",
     "https://checkout.stripe.com",
     "https://django-perfume-app.ew.r.appspot.com",
@@ -96,7 +96,7 @@ CORS_ALLOWED_ORIGINS = [
 
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:4200",
-    "https://redikus3q.github.io",
+    "https://redikus3q.github.io/",
     "https://checkout.stripe.com",
     "https://django-perfume-app.ew.r.appspot.com",
     "https://redikus3q.github.io/perfume-frontend/",
