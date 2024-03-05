@@ -10,10 +10,11 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
+import os
 from datetime import timedelta
 from pathlib import Path
-from dotenv import load_dotenv, find_dotenv
-import os
+
+from dotenv import find_dotenv, load_dotenv
 
 load_dotenv(find_dotenv())
 
@@ -90,6 +91,7 @@ CORS_ALLOWED_ORIGINS = [
     "https://checkout.stripe.com",
     "https://django-perfume-app.ew.r.appspot.com",
     "https://redikus3q.github.io/perfume-frontend/",
+    "https://redikus3q.github.io",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
@@ -97,6 +99,7 @@ CSRF_TRUSTED_ORIGINS = [
     "https://checkout.stripe.com",
     "https://django-perfume-app.ew.r.appspot.com",
     "https://redikus3q.github.io/perfume-frontend/",
+    "https://redikus3q.github.io",
 ]
 
 ROOT_URLCONF = 'parfumeappmain.urls'
